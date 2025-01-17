@@ -87,6 +87,7 @@ header{
 }
 .team{
     align-items: center;
+    margin-bottom: 130px;
 }
 .team-image{
     display: grid;
@@ -110,6 +111,59 @@ header{
     font-size: 2.8rem;
     color: #FF900E;
 }
+
+.section2{
+    gap: 130px;
+}
+
+#icons{
+    border-left: 5px solid #FF900E;
+    padding: 21px;
+}
+.section2-title{
+    font-weight: 800;
+    font-size: 2.8rem;
+    width: 468px;
+}
+.section2-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.section2card-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section2card-des{
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+}
+.section2-img{
+    width: 100%;
+}
+
+
+
 .team-description{
     font-weight: 500;
     font-size: 16px;
@@ -167,9 +221,27 @@ header{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
+.foot{
+    margin-top: 100px;
+    max-width: 1440px;
+    height: 100px;
+    margin:100px auto;
+    /* margin: 40px auto; */
+}
+.foot-title{
+    width: 628px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
 /* responsive media */
 @media screen and (max-width:576px){
-    .navbar, .nav-links, .team{
+    .navbar, .nav-links, .team, .section2{
         flex-direction: column;
     }
     .team-image, .facts-container, .sponser-img{
@@ -186,9 +258,13 @@ header{
     .feature{
         margin-left: 20px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 @media screen and (min-width:576px) and (max-width:992px){
-    .team{
+    .team, .section2{
         flex-direction: column;
     }
     .feature{
@@ -198,5 +274,9 @@ header{
         grid-template-columns: repeat(2,3fr);
         justify-content: center;
         gap: 50px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
